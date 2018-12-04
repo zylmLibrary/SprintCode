@@ -1,4 +1,4 @@
-package com.zylm.library.view;
+ï»¿package com.zylm.library.view;
 
 import java.awt.FlowLayout;
 import java.awt.Font;
@@ -12,8 +12,8 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 
 /**
- * µÇÈë´°¿Ú
- * @author ÁÖ¿­
+ * ç™»å…¥çª—å£
+ * @author æ—å‡¯
  */
 public class LoginWin extends JFrame {
 
@@ -24,10 +24,10 @@ public class LoginWin extends JFrame {
 	ImageIcon img = null;
 
 	/**
-	 * ¹¹Ôìº¯Êı
+	 * æ„é€ å‡½æ•°
 	 */
 	public LoginWin() {
-		super("Í¼Êé¹İµÇÂ½");
+		super("å›¾ä¹¦é¦†ç™»é™†");
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		this.setSize(450, 300);
 		this.setLocation(200, 100);
@@ -37,7 +37,7 @@ public class LoginWin extends JFrame {
 	}
 
 	/**
-	 * ³õÊ¼»¯UI
+	 * åˆå§‹åŒ–UI
 	 */
 	private void initUI() {
 		box = Box.createVerticalBox();
@@ -47,19 +47,19 @@ public class LoginWin extends JFrame {
 		boxLf = Box.createVerticalBox();
 		boxRt = Box.createVerticalBox();
 
-		lblTitle = new JLabel("Í¼Êé¹İµÇÂ½");
-		lblTitle.setFont(new Font("ËÎÌå", 1, 35));
-		lblNum = new JLabel("Ñ§  ºÅ:");
-		lblPwd = new JLabel("ÃÜ  Âë:");
+		lblTitle = new JLabel("å›¾ä¹¦é¦†ç™»é™†");
+		lblTitle.setFont(new Font("å®‹ä½“", 1, 35));
+		lblNum = new JLabel("å­¦  å·:");
+		lblPwd = new JLabel("å¯†  ç :");
 
 		txtNum = new JTextField(20);
 		txtPwd = new JTextField(20);
 
-		btnReg = new JButton("×¢²á");
+		btnReg = new JButton("æ³¨å†Œ");
 
 
-		btnLog = new JButton("µÇÂ¼");
-		btnVis = new JButton("ÓÎ¿ÍµÇÂ¼");
+		btnLog = new JButton("ç™»å½•");
+		btnVis = new JButton("æ¸¸å®¢ç™»å½•");
 
 		boxLf.add(lblNum);
 		boxLf.add(Box.createVerticalStrut(30));
@@ -92,11 +92,11 @@ public class LoginWin extends JFrame {
 	}
 
 	/**
-	 * ÉèÖÃÄ¬ÈÏ×ÖÌå
+	 * è®¾ç½®é»˜è®¤å­—ä½“
 	 */
 	private static void setFont() {
-		// ÉèÖÃÄ¬ÈÏ×ÖÌå
-		Font font = new Font("¿¬Ìå", Font.PLAIN, 25);
+		// è®¾ç½®é»˜è®¤å­—ä½“
+		Font font = new Font("æ¥·ä½“", Font.PLAIN, 25);
 		UIManager.put("Label.font", font);
 		UIManager.put("Button.font", font);
 		UIManager.put("TextField.font", font);
